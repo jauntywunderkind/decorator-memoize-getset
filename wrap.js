@@ -1,6 +1,6 @@
 "use module"
 
-export decorator @MemoizeGet {
+export decorator @MemoizeGetSet{
 	@wrap( fn=> {
 		// only wrap get functions
 		if( !fn.name.startsWith( "get ")){
