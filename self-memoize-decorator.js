@@ -1,19 +1,19 @@
 export decorator SelfMemoizeGet {
-	@wrap( f=> {
+	@wrap( fn=> {
 		// only wrap get functions
-		if( !f.name.startsWith( "get ")){
-			return f
+		if( !fn.name.startsWith( "get ")){
+			return fn
 		}
 		let value
 		function memoized(){
-			if( f=== null){
+			if( fn=== null){
 				return value
 			}
-			f= null // free
-			value= f()
+			fn= null // free
+			value= fn.call( this)
 			return value
 		}
-		memoized.name= f.name
+		memoized.name= fn.name
 		return memoized
 	})
 }
