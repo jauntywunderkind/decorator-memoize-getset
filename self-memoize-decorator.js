@@ -4,14 +4,12 @@ export decorator SelfMemoizeGet {
 		if( !f.name.startsWith( "get ")){
 			return f
 		}
-		let set
 		let value
 		function memoized(){
-			if( set){
+			if( f=== null){
 				return value
 			}
 			f= null // free
-			set= true
 			value= f()
 			return value
 		}
