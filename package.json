@@ -1,18 +1,18 @@
 {
-	"name": "memoize-decorator",
+	"name": "memoize-decorator-getset-getset",
 	"version": "1.0.0",
 	"description": "Decorators to make a getter memoized",
-	"main": "memoize-decorator.js",
+	"main": "memoize-decorator-getset.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://archive.eldergods.com/memoize-decorator"
+		"url": "https://archive.eldergods.com/memoize-decorator-getset"
 	},
 	"keywords": [],
 	"author": "jauntywunderkind",
 	"license": "MIT",
-	"module": "memoize-decorator.js",
+	"module": "memoize-decorator-getset.js",
 	"esm": true
 }
