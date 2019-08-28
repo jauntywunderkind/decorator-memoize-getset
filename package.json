@@ -1,5 +1,5 @@
 {
-	"name": "decorator-memoize-getset-getset",
+	"name": "decorator-memoize-getset",
 	"version": "1.0.0",
 	"description": "Decorators to make a getter memoized",
 	"main": "decorator-memoize-getset.js",
